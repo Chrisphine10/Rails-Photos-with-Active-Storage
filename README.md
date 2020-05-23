@@ -59,7 +59,7 @@ this will display the photo
 <p>
   <%= image_tag(@photo.photo) %>
 </p>```
-you can add some styling to the photo with the code below.
+#you can add some styling to the photo with the code below.
 <div>
   <%= image_tag(@photo.photo, style: 'width: 200px; height: auto') %>
 </div>
