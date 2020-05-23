@@ -5,18 +5,19 @@ Implementation of a module for adding pictures using rails Active_Storage gem.
 Below is the list of steps that are made to implement the module in the repository.
 
 Initialize the rails application
-rails new picture-module -d mysql -T
+
+``` rails new picture-module -d mysql -T```
 
 -T removes the test gem that is preinstalled. I prefer rspec.
 
 get into the application file directory
-cd pucture-module
+```cd pucture-module```
 
 run bundle to install the pending gems
-bundle install
+```bundle install```
 
 then create the database
-rails db:create
+```rails db:create```
 
 do a database migration to get initial values to the databases created
 rails db:migrate
