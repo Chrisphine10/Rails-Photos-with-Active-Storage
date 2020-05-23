@@ -47,8 +47,8 @@ add the variable for holding your photo into app/models/photo.rb
 has_one_attached :photo
 
 add the variable into the controller paramitters app/controllers/PhotosController.rb
-# change "params.require(:photo).permit(:title, :caption)" into:
 
+change "params.require(:photo).permit(:title, :caption)" into:
 params.require(:photo).permit(:title, :caption, :photo)
 
 make the photo visible in the views. add the code below to app/views/photos/form.html.erb
