@@ -4,16 +4,16 @@
 Implementation of a module for adding pictures using rails Active_Storage gem.
 Below is the list of steps that are made to implement the module in the repository.
 
-Initialize the rails application
+Initialize the rails application.
 
 ``` rails new picture-module -d mysql -T```
 
 -T removes the test gem that is preinstalled. I prefer rspec.
 
-get into the application file directory
+get into the application file directory.
 ```cd pucture-module```
 
-run bundle to install the pending gems
+run bundle to install the pending gems.
 ```bundle install```
 
 then create the database
@@ -58,7 +58,7 @@ this will display the photo
 ```app/views/photos/show.html.erb
 <p>
   <%= image_tag(@photo.photo) %>
-</p>```
+</p>
 #you can add some styling to the photo with the code below.
 <div>
   <%= image_tag(@photo.photo, style: 'width: 200px; height: auto') %>
@@ -67,9 +67,3 @@ make the image clickable
 <div>
   <%= link_to image_tag(@photo.photo, style: 'width: 200px; height: auto'), photos_path %>
 </div>
-
-
-
-
-
-
