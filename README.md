@@ -11,7 +11,7 @@ Initialize the rails application.
 -T removes the test gem that is preinstalled. I prefer rspec.
 
 get into the application file directory.
-```cd pucture-module```
+```cd picture-module```
 
 run bundle to install the pending gems.
 ```bundle install```
